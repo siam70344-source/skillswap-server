@@ -11,5 +11,5 @@ const userSchema = new mongoose.Schema({
   isBlocked: { type: Boolean, default: false },
   createdAt: { type: Date, default: Date.now }
 });
-
+// assign the schema to a model and export it
 module.exports = mongoose.model('User', userSchema);
