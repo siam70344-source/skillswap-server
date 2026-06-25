@@ -20,5 +20,5 @@ const taskSchema = new mongoose.Schema({
   deliverable_url: { type: String, default: '' },
   createdAt: { type: Date, default: Date.now }
 });
-
+// assign the schema to a model and 
 module.exports = mongoose.model('Task', taskSchema);
