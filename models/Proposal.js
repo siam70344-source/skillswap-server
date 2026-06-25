@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// Define the Proposal schema
 const proposalSchema = new mongoose.Schema({
   task_id: { type: String, required: true },
   freelancer_email: { type: String, required: true },
