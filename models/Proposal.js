@@ -13,5 +13,5 @@ const proposalSchema = new mongoose.Schema({
   },
   submitted_at: { type: Date, default: Date.now }
 });
-
+// assign the schema to a model and export it
 module.exports = mongoose.model('Proposal', proposalSchema);
