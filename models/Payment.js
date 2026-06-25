@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-// Define the Payment schema
+// Define the Payment schem
 const paymentSchema = new mongoose.Schema({
   client_email: { type: String, required: true },
   freelancer_email: { type: String, required: true },
