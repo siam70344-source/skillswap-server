@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// Define the Review schema
 const reviewSchema = new mongoose.Schema({
   task_id: { type: String, required: true },
   reviewer_email: { type: String, required: true },
