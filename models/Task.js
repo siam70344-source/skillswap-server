@@ -7,7 +7,7 @@ const taskSchema = new mongoose.Schema({
     enum: ['Design', 'Writing', 'Development', 'Marketing', 'Other'],
     required: true 
   },
-  // detailed description of the task
+  // detailed description
   description: { type: String, required: true },
   budget: { type: Number, required: true },
   deadline: { type: Date, required: true },
