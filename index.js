@@ -82,7 +82,7 @@ app.use('/api/tasks', require('./routes/tasks'));
 app.use('/api/users', require('./routes/users'));
 
 // Protected routes (JWT required)
-app.use('/api/proposals', verifyToken, require('./routes/proposals'));
+app.use('/api/proposals', require('./routes/proposals'));
 app.use('/api/payments', verifyToken, require('./routes/payments'));
 
 // Test
