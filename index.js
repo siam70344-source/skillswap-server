@@ -86,8 +86,7 @@ const { verifyToken } = require('./middleware/auth');
 app.use('/api/tasks', require('./routes/tasks'));
 app.use('/api/users', require('./routes/users'));
 app.use('/api/proposals', require('./routes/proposals'));
-app.use('/api/payments', verifyToken, require('./routes/payments'));
-
+app.use('/api/payments', require('./routes/payments'));
 app.get('/', (req, res) => res.json({ message: 'SkillSwap Server Running!' }));
 
 const PORT = process.env.PORT || 5000;
